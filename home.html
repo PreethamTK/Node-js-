@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Alef:400,700);
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* Layout Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  font-family: 'Alef', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/*Clear Fix Hack */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+h1 {
+  font-size: 3.125em;
+  padding: 15px 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  color: #00766c;
+  display: block;
+  text-align: center;
+}
+h2, h5 {
+  font-family: 'Roboto Slab', serif;
+  padding: 15px;
+  color: #eff0e8;
+  text-shadow: -1px 2px 0px #00766c;
+  filter: dropshadow(color=#00766c, offx=-1, offy=2);
+}
+h2{
+  font-size: 2.5em;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+input[type="text"] {
+  display: block;
+  height: 30px;
+  padding: 5px;
+  width: 380px;
+  margin: 15px;
+  border: solid 2px #00766c;
+  font-size: 1em;
+  color: #444;
+  background-color: #00766c;
+}
+input[type="text"]:focus {
+  outline: none;
+  background-color: #FFF;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #FFF;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #FFF;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #FFF;
+}
+
+/* Specific CSS */
+
+p.panel {
+  margin: 20px auto 40px;
+  width: 480px;
+  padding: 10px;
+  background-color: #44a18e;
+  text-align: center;
+  color: #00393b;
+  font-weight: normal;
+  font-size: 1.125em;
+  border: solid 1px #ddd;
+  border-bottom: solid 1px #00393b;
+  border-radius: 4px;
+  box-shadow: 0 6px 6px -4px #00393b;
+}
+.panel > i {
+  color: #fefefe;
+  padding-right: 10px;
+}
+.wrapper {
+  margin: 20px auto;
+  padding: 0;
+  width: 960px;
+  background-color: #fefefe;
+  clear: both;
+}
+.top-bar-contain {
+  margin: 20px auto 0;
+  padding: 0;
+  width: inherit;
+  height: 58px;
+}
+.top-bar {
+  margin: 0 auto;
+  padding: 0;
+  width: inherit;
+  text-transform: uppercase;
+  color: #f5f2e9;
+}
+.top-bar div {
+  display: inline-block;
+  width: 244px;
+  margin: 0 -10px 0 0;
+  padding: 20px 0;
+  background-color: #00393B;
+  border-top: solid 1px #44a18e;
+  border-bottom: solid 4px #00766c;
+  text-align: center;
+  text-shadow: 0px 2px 0px #00766c;
+  filter: dropshadow(color=#00766c, offx=-1, offy=0);
+  cursor: pointer;
+}
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+.content p {
+  float: left;
+  padding:15px;
+  width: 46%;
+  line-height: 1.5em;
+  text-align: justify;
+  color: #44a18e;
+}
+.logo  {
+  display: block;
+  margin: 20px auto;
+  width: 430px;
+  height: auto;
+  border: 0;
+  text-align: center;
+}
+/* Dropdown jQuery CSS */
+
+.drop-contact {
+  margin: 0 auto;
+  padding: 0;
+  width: 920px;
+  background-color: #44a18e;
+  border: solid 1px #00766c;
+}
+.reach-out, .contact-form {
+  float: left;
+  display: inline-block;
+  width: 418px;
+  padding: 10px;
+  margin: 10px;
+}
+.form-button {
+  float: right;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0 10px 1.25em;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.75em;
+  padding-right: 1.5em;
+  padding-bottom: 0.8125em;
+  padding-left: 1.5em;
+  font-size: 1em;
+  background-color: #00393b;
+  border-color: #00393b;
+  box-shadow: 0px 6px 0 0 #00766c;
+  color: #FFF;
+}
+.form-button:active {
+  position: relative;
+  bottom: -4px;
+  box-shadow: 0 0 0 0;
+}
+.close {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+.close > i {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+</style>
+
+</head>
+
+
+
+
+<body>
+<div class="wrapper">
+  <div class="top-bar-contain">
+
+  <nav class="top-bar">
+    <div id="home"><i class="entypo-home"></i> Home</div>
+    <div id="about"><i class="entypo-flash"></i>
+    <a id="login-button" class="button button-editor-solid login-button" href="/profile">Profile</a></div>
+
+    <div id="features"><i class="entypo-flash"></i>
+    <a id="login-button" class="button button-editor-solid login-button" href="/course">Courses</a></div>
+    <div id="sign-up">
+    <i class="entypo-clipboard" > </i>
+    <a id="login-button" class="button button-editor-solid login-button" href="/logout">Log Out</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="drop-contact">
+      <div class="reach-out">
+        <h2 class="featured-heading text-left light">We Want You to Win!</h2>
+        <h5 class="light">Thank you for using our system, the number one college in India, ever. Seriously, We&apos;re the best.</h5>
+        <h5 class="light">Register today to Enroll . We provide the best education for the past 50 years and you know what, everyone loves it!</h5>
+      </div>
+
+
+      <!-- Close Icon -->
+      <div class="close">
+        <i class="entypo-cancel-squared"></i>
+      </div>
+    </div>
+    <!-- End Drop Down Section -->
+
+
+    <h1>Welcome to your profile <span style="color:#f6695b;">Enjoy <i class="entypo-heart"></i>.</span></h1>
+    <p>
+      Hello. Have a nice day
+    </p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+</body>
